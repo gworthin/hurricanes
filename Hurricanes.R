@@ -42,8 +42,6 @@ us_contiguous %>%
 # on the hurricanes dataset)
 us_contiguous[is.na(us_contiguous)] <- 0 
 
-# https://r-spatial.github.io/sf/articles/sf5.html
-
 # Set the CRS and graticule
 laea = st_crs("+proj=laea +lat_0=30 +lon_0=-95") # Lambert equal area
 us_contiguous <- st_transform(us_contiguous, laea)
