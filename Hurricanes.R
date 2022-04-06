@@ -8,8 +8,7 @@ library(sf)
 # hur_state dataset from https://www.nhc.noaa.gov/data/hurdat/hurdat2-format-nov2019.pdf
 
 # Remove geometry column from hur_state so I can manipulate the table
-hur_state %>% 
-  select(-geometry) -> hurricanes
+hur_state -> hurricanes
 
 ############################################
 # Analysis of Number of Hurricanes by State
