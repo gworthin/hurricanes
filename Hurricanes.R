@@ -7,7 +7,7 @@ library(sf)
 
 # hur_state dataset from https://www.nhc.noaa.gov/data/hurdat/hurdat2-format-nov2019.pdf
 
-# Remove geometry column from hur_state so I can manipulate the table
+# Copy dataframe and name it hurricanes
 hur_state -> hurricanes
 
 ############################################
